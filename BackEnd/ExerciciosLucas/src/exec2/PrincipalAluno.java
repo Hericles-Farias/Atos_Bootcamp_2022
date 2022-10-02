@@ -11,6 +11,8 @@ public class PrincipalAluno {
 		a2.showInfo();
 		Aluno a3 = new Aluno("Joao","29/09/2022","2019");
 		a1.showInfo();
+		a2.showInfo();
+		a3.showInfo();
 	}
 
 }

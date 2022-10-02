@@ -12,9 +12,6 @@ public class Aluno {
 		this.matricula = matricula;
 	}
 	
-//	public Aluno() {
-//
-//	}
 
 	public Aluno(String dataNascimento) {
 		this.dataNascimento = dataNascimento;
