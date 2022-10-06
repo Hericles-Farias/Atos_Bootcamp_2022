@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "BackEnd/ExerciciosdeAula/Exerc_Aulas/src/heck_db_conn/db_location/mysql-connector-java-8.0.30.jar"
+    ]
+}
