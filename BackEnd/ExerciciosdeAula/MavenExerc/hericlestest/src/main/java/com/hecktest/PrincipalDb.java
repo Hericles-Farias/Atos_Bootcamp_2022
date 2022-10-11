@@ -1,4 +1,4 @@
-package heck_db_conn;
+package com.hecktest;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 public class PrincipalDb {

@@ -1,4 +1,4 @@
-package heck_db_conn;
+package com.hecktest;
 
 public class Query {
     //delete and where statements

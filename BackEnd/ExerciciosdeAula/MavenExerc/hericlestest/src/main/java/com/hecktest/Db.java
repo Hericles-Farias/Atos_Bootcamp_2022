@@ -1,5 +1,4 @@
-package heck_db_conn;
-
+package com.hecktest;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

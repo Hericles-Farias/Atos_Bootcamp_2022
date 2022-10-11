@@ -1,0 +1,6 @@
+out. 10, 2022 7:37:47 PM principal main
+INFORMAÇÕES: Log de Informação
+out. 10, 2022 7:37:47 PM principal main
+ADVERTÊNCIA: Log de Aviso
+out. 10, 2022 7:37:47 PM principal main
+GRAVE: Log Severo
