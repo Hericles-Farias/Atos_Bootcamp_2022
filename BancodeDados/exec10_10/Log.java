@@ -16,7 +16,9 @@ public class Log {
 
   fh = new FileHandler(nome_arquivo, true);
   fh.setEncoding("UTF-8");
+
   logger = Logger.getLogger("Teste Log");
+  
   logger.addHandler(fh);
   SimpleFormatter formatter = new SimpleFormatter();
   fh.setFormatter(formatter);
