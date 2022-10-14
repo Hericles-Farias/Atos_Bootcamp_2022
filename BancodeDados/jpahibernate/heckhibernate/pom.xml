@@ -19,7 +19,7 @@
       <dependency>
           <groupId>org.hibernate</groupId>
           <artifactId>hibernate-core</artifactId>
-          <version>6.1.4.Final</version>
+          <version>5.4.4.Final</version>
           <type>pom</type>
       </dependency>
 
@@ -37,13 +37,6 @@
       <artifactId>hibernate-entitymanager</artifactId>
       <version>5.4.4.Final</version>
     </dependency>
-
-    <!-- Database -->
-    <!-- <dependency>
-      <groupId>com.h2database</groupId>
-      <artifactId>h2</artifactId>
-      <version>1.4.199</version>
-    </dependency> -->
 
   </dependencies>
 

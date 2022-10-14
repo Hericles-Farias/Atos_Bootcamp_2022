@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+    http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1">
+
+	<persistence-unit name="exemplo-jpa" transaction-type="RESOURCE_LOCAL">
+	<properties>
+		<property name="javax.persistence.jdbc.url"
+			value="jdbc:mysql://localhost/exemplo_jpa01?useSSL=false&amp;serverTimezone=UTC" />
+
+		<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+		<property name="javax.persistence.jdbc.user" value="root" />
+		<property name="javax.persistence.jdbc.password" value="" />
+
+        <!-- Esta propriedade gera automaticamente para nos o banco de dados
+        o value=update, faz com que  db se atualiza automaticamente conforme as classes de 
+        dominio da aplicacao. Se vc acrescentar um atributo numa classe de dominio
+        quando vc rodar a aplicacao automaticamente ele vai acrescentar uma coluna na 
+        tabela do banco de dados
+        Dá pra usar a opcao value=create, aqui toda vez que rodarmos a nossa app o nosso
+        banco de dados vai ser recriado! -->
+		<property name="hibernate.hbm2ddl.auto" value="update" />
+
+		<!-- https://docs.jboss.org/hibernate/orm/5.4/javadocs/org/hibernate/dialect/package-summary.html -->
+        <!-- Esse dialect aqui tem que cuidar pois ele deve ser compativel com a sua versao do mysql connector -->
+
+		<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" />
+	</properties>
+	</persistence-unit>
+</persistence>
