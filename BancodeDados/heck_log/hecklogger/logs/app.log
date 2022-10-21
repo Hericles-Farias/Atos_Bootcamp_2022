@@ -1,0 +1,6 @@
+2022-10-14 16:43:58,258 DEBUG c.h.Principal [main] Debg msg heehe
+2022-10-14 16:43:58,261 INFO c.h.Principal [main] Info msg heehe
+2022-10-14 16:43:58,261 ERROR c.h.Principal [main] Error msg heehe
+2022-10-14 16:47:30,892 ERROR c.h.Principal [main] Error msg heehe
+2022-10-14 16:47:41,902 ERROR c.h.Principal [main] Error msg heehe
+2022-10-14 16:48:00,654 ERROR c.h.Principal [main] Error msg heehe

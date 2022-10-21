@@ -1,12 +1,18 @@
 package com.hericlesjpa;
+
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.hericlesjpa.Pessoa.Rating;
 
 public class Principal {
     
+    Logger logger =  LogManager.getLogger("com.hericlesjpa");
     public static void main(String[] args) {
     // Pessoa p1 = new Pessoa(null,"Carlos da Silva","carlos@gmail.com");
     // Pessoa p2 = new Pessoa(null,"Joaguim Torres","jt@gmail.com");  

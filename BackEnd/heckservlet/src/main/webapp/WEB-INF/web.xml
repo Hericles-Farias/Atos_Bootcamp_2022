@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <display-name>heckservlet</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>execk01</display-name>
+    <servlet-name>execk01</servlet-name>
+    <servlet-class>heckservlet.execk01</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>execk01</servlet-name>
+    <url-pattern>/execk01</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Exec3</display-name>
+    <servlet-name>Exec3</servlet-name>
+    <servlet-class>heckservlet.Exec3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Exec3</servlet-name>
+    <url-pattern>/Exec3</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Eissoai</display-name>
+    <servlet-name>Eissoai</servlet-name>
+    <servlet-class>seilaoque.Eissoai</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Eissoai</servlet-name>
+    <url-pattern>/Eissoai</url-pattern>
+  </servlet-mapping>
+</web-app>
