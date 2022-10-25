@@ -1,13 +1,11 @@
 package com.hericlesjpa;
 
 import java.io.Serializable;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 
@@ -20,44 +18,16 @@ public class Pessoa implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer id;
-    public String email;
     
-    @Enumerated(EnumType.STRING)
-    public Rating rating;
-
-
-    @Column(name="NomeCompleto") 
     public String nome;
+    public String alcance;
+    public String dano;
+    
+    @Column(name="Função") 
+    public String funcao;
 
     public Pessoa(){
 
-    }
-
-    public enum Rating {
-        ONE, TWO, THREE, FOUR, FIVE
-    }
-
-    public Pessoa(Integer id, String email, String nome, Rating rating) {
-        this.id = id;
-        this.email = email;
-        this.nome = nome;
-        this.rating = rating;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public String getNome() {
@@ -68,20 +38,44 @@ public class Pessoa implements Serializable{
         this.nome = nome;
     }
 
+    public String getAlcance() {
+        return alcance;
+    }
 
+    public void setAlcance(String alcance) {
+        this.alcance = alcance;
+    }
+
+    public String getDano() {
+        return dano;
+    }
+
+    public void setDano(String dano) {
+        this.dano = dano;
+    }
+
+    public String getFuncao() {
+        return funcao;
+    }
+
+    public void setFuncao(String funcao) {
+        this.funcao = funcao;
+    }
+
+    public Pessoa(String nome, String alcance, String dano, String funcao) {
+        this.nome = nome;
+        this.alcance = alcance;
+        this.dano = dano;
+        this.funcao = funcao;
+    }
 
     @Override
     public String toString() {
-        return "Pessoa [id=" + id + ", email=" + email + ", rating=" + rating + ", nome=" + nome + "]";
+        return "Pessoa [id=" + id + ", nome=" + nome + ", alcance=" + alcance + ", dano=" + dano + ", funcao=" + funcao
+                + "]";
     }
 
-    public Rating getRating() {
-        return rating;
-    }
 
-    public void setRating(Rating rating) {
-        this.rating = rating;
-    }
 
     
 

@@ -42,6 +42,7 @@ public class Principal {
     em.getTransaction().begin();
     p1 = em.find(Pessoa.class, p1.getId());
     System.out.println(p1);
+    
     // delete OPERATION
     // Pessoa p = em.find(Pessoa.class, 2);
     // em.getTransaction().begin();
