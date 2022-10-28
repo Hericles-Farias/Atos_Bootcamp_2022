@@ -1,14 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* font-family: 'Titillium Web', sans-serif; */
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: #171717;    
+}
+
+body{
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: xx-large;
+    cursor: default;
+    color:white;
+}
+
+
+h2{
+    text-align: center;
+    font-weight: 400;
+    font-size: xx-large;
+    cursor: default;
+    color:white;
+    margin-bottom: 2.5%;
+}
+
 #periodic_table{
     width:100%;
     min-width: 600px;
+    text-align: center;
+    margin-top: 5%;
+    background-color:#171717;
+}
+
+.quadrado_legenda{
+    display: inline-block;
+    background-color:yellow;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 2.5%;
+    margin-left: 2.5%;
+    border: 3px solid black;
+    border-radius: 25%;
+}
+.legenda{
+    display: flex;
+    margin-bottom: 2.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.cl{
     
 }
 
-#especials{
-	width: 5.5%;
-	display:inline-block;
-	margin-right: -5px;   
+
+.q1{
+    display: flex;
+    background-color: #171717;
+    align-items: center;
+    justify-content: center;
 }
+
+
+
+.sigla2{
+    text-align: center;
+    margin-left: 2px;
+    margin-top: 35px;
+    font-size: 35px;
+    line-height: 5px;
+}
+.num2{
+    text-align: left;
+    margin-left:15%;
+    margin-top:5%;
+    font-size:12px;
+    font-weight: 700;
+}
+.nome2{
+    text-align: center;
+    margin-top:15%;
+    font-size: 20px;
+}
+
+.peso_atomico2{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.container-t{
+    max-width: 1100px;
+    background: white;
+    
+}
+
+.spaceit{
+    margin-top:5%;
+}
+
+.gro{
+    background-color:red;
+    width: 150px;
+    height: 75px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid black;
+    border-radius: 15%;
+}
+
 
 
 #periodic_table > div {
@@ -20,10 +132,24 @@
 #periodic_table > div > div{
 	width: 5.5%;
 	display:inline-block;
-	margin-right: -5px;    
+	margin-right: -9px;    
 }
 
+#periodic_table > div > div > div {
+    border: 3px solid black;
+    /* -webkit-box-sizing: border-box;
+    box-sizing: border-box; */
+    text-align: center;
+    margin-top: -3px;
+    /* background-color: aqua; */
+    padding: 20% 0;
+    border-radius: 25%;
+    
+}
 
+.invisible{
+    visibility: hidden;
+}
 
 .num{
     text-align: left;
@@ -31,7 +157,9 @@
     margin-top:-5px;
     font-size: 12px;
     line-height: 7px;
+
 }
+
 .sigla{
     text-align: center;
     font-size: 1rem;
@@ -57,55 +185,44 @@
     }
 
 
-.cor_b{
-    background-color: violet;
+.nao_metais{
+    background-color: #bef950;
 }
 
-.cor_c{
-    background-color: orange;
+.metais_alcalinos{
+    background-color: #f1b200;
 }
 
-
-.cor_d{
-    background-color: gray;
+.metais_alcalinos_terrosos{
+    background-color: #fffc00;
 }
 
-.cor_e{
-    background-color: brown;
+.metais_transicao{
+    background-color: #ff8c84;
 }
 
-.cor_f{
-    background-color: yellowgreen;
+.lantanideos{
+    background-color: #88e7ff;
 }
 
-.cor_k1{
-    background-color: rebeccapurple;
+.actinidios{
+    background-color: #d49bcd;
 }
-.cor_k2{
-    background-color: palevioletred;
-}
-.cor_k3{
-    background-color: paleturquoise;
+
+.semimetais{
+    background-color: #44a69c;
 }
 
 
-
-.whole{
-    background: red;
-    border: 2px solid black;
+.halogenios{
+    background-color: #5ac3e8;
 }
 
-.H{
-    background: orange;
-    border: 2px solid black;
+.outros_metais{
+    background-color: #91bdcb;
 }
 
-#periodic_table > div > div > div {
-    border: 3px solid black;
-    /* -webkit-box-sizing: border-box;
-    box-sizing: border-box; */
-    text-align: center;
-    margin-top: -3px;
-    /* background-color: aqua; */
-    padding: 20% 0;
+.gases_nobres{
+    background-color: #2793e0;
 }
+
