@@ -1,0 +1,12 @@
+2022-10-30 16:17:22,247 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: aulaandre]
+2022-10-30 16:17:22,302 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.0.0.Alpha7
+2022-10-30 16:17:22,468 INFO o.h.a.c.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-30 16:17:22,753 WARN o.h.o.c.pooling [main] HHH10001002: Using built-in connection pool (not intended for production use)
+2022-10-30 16:17:22,759 INFO o.h.o.c.pooling [main] HHH10001005: Loaded JDBC driver class: com.mysql.jdbc.Driver
+2022-10-30 16:17:22,759 INFO o.h.o.c.pooling [main] HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost/aulaandre?useSSL=false&serverTimezone=UTC]
+2022-10-30 16:17:22,760 INFO o.h.o.c.pooling [main] HHH10001001: Connection properties: {user=root}
+2022-10-30 16:17:22,761 INFO o.h.o.c.pooling [main] HHH10001003: Autocommit mode: false
+2022-10-30 16:17:22,764 INFO o.h.o.c.pooling [main] HHH10001115: Connection pool size: 20 (min=1)
+2022-10-30 16:17:22,934 INFO SQL dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-30 16:17:22,937 WARN o.h.o.deprecation [main] HHH90000025: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2022-10-30 16:17:23,118 INFO o.h.o.c.pooling [main] HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost/aulaandre?useSSL=false&serverTimezone=UTC]

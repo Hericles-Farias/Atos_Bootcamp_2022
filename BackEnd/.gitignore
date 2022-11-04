@@ -1,1 +1,8 @@
 /.metadata/
+.classpath
+.project
+.settings/
+target/
+.gitignore
+*.jar
+!libs/**/*.jar
