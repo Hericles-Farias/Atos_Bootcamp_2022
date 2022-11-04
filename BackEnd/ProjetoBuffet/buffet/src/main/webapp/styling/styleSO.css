@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+main{
+    background: url(../images/bg.jpg);
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100vw;
+    height: 100vh;
+}
+
+form { 
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+label{
+    font-size: 25px;
+    color: white;
+}
+
+div{
+    display:flex;
+    margin-bottom: 10px;
+}
+
+div > div {
+    width: 150px;
+ 
+    
+}
+
+.caixa{
+    border: none;
+    border-radius: 5px;
+    width: 350px;
+    background-color: white;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.btn-act{
+    padding:1rem 2rem;
+    border-radius: 5px;
+    border:none;
+    background-color: white;
+    color:black;
+}
+
+.btn-act:hover{
+    background-color: black;
+    color:white;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+.fcc-btn{
+    text-decoration: none;
+}
