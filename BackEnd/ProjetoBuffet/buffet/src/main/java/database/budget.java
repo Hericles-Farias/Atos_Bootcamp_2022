@@ -93,7 +93,7 @@ public class budget implements Serializable {
     }
 
     public BigDecimal getvalorPorConv() {
-        return valorTotal;
+        return valorPorConv;
     }
 
     public BigDecimal getValorTotal() {

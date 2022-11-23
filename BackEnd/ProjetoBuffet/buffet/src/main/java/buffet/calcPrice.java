@@ -20,9 +20,13 @@ public class calcPrice {
     public void doCalc(){
         //contants
         Double hotMeal=22.90;
-        Double dessertTax=0.1;
+        Double dessertTax;
+        if(this.dessert){
+            dessertTax=0.1;
+        }else{
+            dessertTax=0.0;
+        }
         Integer waitersTax=250;
-        
         Double valuePerGuests=this.guests * hotMeal;
         this.waiters = (int) Math.ceil((double) this.guests/15);
         Integer waitersTotal=this.waiters*waitersTax;
@@ -31,27 +35,27 @@ public class calcPrice {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public Integer getGuests() {
-        return guests;
+        return this.guests;
     }
 
     public Boolean getDessert() {
-        return dessert;
+        return this.dessert;
     }
 
     public Double getValorTotal() {
-        return valorTotal;
+        return this.valorTotal;
     }
 
     public Integer getWaiters() {
-        return waiters;
+        return this.waiters;
     }
 
     public Double getValorPorConv() {
-        return valorPorConv;
+        return this.valorPorConv;
     }
     
 

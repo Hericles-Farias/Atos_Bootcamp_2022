@@ -95,12 +95,14 @@ public class seeOrders extends HttpServlet{
                 getid = "<td>"+ k.getGarcons() + "</td>";
                 out.println(getid);
                 Boolean ds = k.getSobremesa();
+                String dsx;
                 if (ds){
-                    getid="Sim";
+                    dsx="Sim";
                 }else{
-                    getid="Não";
+                    dsx="Não";
                 }
-                getid = "<td>"+ k.getSobremesa() + "</td>";
+                getid = "<td>"+ dsx + "</td>";
+                
                 out.println(getid);
                 getid = "<td>R$ "+ String.format("%.2f",k.getvalorPorConv()) + "</td>";
                 out.println(getid);
