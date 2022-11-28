@@ -1,16 +1,16 @@
 package com.br.atos2022.bss.repositories;
 
-import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.br.atos2022.bss.models.user;
+import com.br.atos2022.bss.models.Role;
 
 @Repository
-public interface userRepository extends JpaRepository<user, Integer> {
+public interface roleRepository extends JpaRepository<Role,String>{
     
-    Optional<user> findByUsername(String username);
+    Optional<Role> findByRoleID(String role_id);
 
 }

@@ -18,5 +18,4 @@ public interface schedulingMapper {
     scheduling toScheduling(schedulingDTO schedDTO); 
 
 
-
 }
